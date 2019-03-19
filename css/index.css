@@ -1,0 +1,475 @@
+
+.navLeft a:nth-child(1){
+    background: #fdb2a4;
+}
+.mainWrap .commend{
+     width: 1180px;
+     margin: 0 auto;
+ }
+.commend #preLi,.commend #nextLi{
+    top: 112px;
+}
+/*banner*/
+#banner{
+    width: 100%;
+    height: 603px;
+    position: relative;
+    margin-bottom: 55px;
+}
+#banner a{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+ }
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+#banner>a:first-child{
+    opacity: 1;
+}
+#selectBox{
+    position: absolute;
+    left: 640px;
+    bottom: 40px;
+}
+#selectBox li{
+    float: left;
+    margin-right: 9px;
+    width: 14px;
+    height: 14px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: gray;
+}
+#preBtn{
+    display: block;
+    width: 45px;
+    height: 70px;
+    position: absolute;
+    left: 200px;
+    top: 255px;
+    background:url("../img/prev_54.png");
+    opacity: 0;
+}
+#preBtn:hover{
+    background-position: -45px;
+}
+#banner:hover #preBtn{
+    opacity: 1;
+}
+#banner:hover #nextBtn{
+    opacity: 1;
+}
+#nextBtn{
+    display: block;
+    width: 45px;
+    height: 70px;
+    position: absolute;
+    right: 200px;
+    top: 255px;
+    background:url("../img/next_54.png");
+    opacity: 0;
+}
+#nextBtn:hover{
+    background-position: -45px;
+}
+
+
+.mainLeft{
+    float: left;
+    width: 580px;
+    height: 443px;
+    background: #f7f7f7;
+}
+.showStage{
+    width: 352px;
+    height: 213px;
+    margin: 0 auto;
+    position: relative;
+}
+.mainLeft h2{
+    text-align: center;
+    padding: 45px 0 27px;
+}
+.showStageImg{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+.showStage .showStageImg:first-child{
+    z-index: 999;
+    opacity: 1;
+}
+.mainLeft img:first-child{
+    display: block;
+}
+.mainLeft a{
+    display: block;
+    width: 204px;
+    line-height: 34px;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto 12px;
+    color: #fff;
+    background: #f6827a;
+}
+.mianRight{
+    float: right;
+    position: relative;
+}
+.product{
+    height: auto;
+}
+#proNav{
+    text-align: center;
+    line-height: 37px;
+    background: #feb8ae;
+}
+#proNav a{
+    padding: 0 42px;
+    font-size: 12px;
+    color: #fff;
+}
+#proNav .show{
+    color: #000;
+}
+.main .active{
+    display: block;
+}
+.proShow{
+    padding-top: 20px;
+    display: none;
+}
+.proLeft{
+    float: left;
+    width: 700px;
+}
+.proLeft img{
+    display: block;
+}
+.proLeft img:first-child{
+    margin-bottom: 13px;
+}
+.proRight{
+    float: right;
+}
+.iconAnd{
+    display: inline-block;
+    width: 33px;
+    height: 19px;
+    background: url("../img/icon_and.jpg") no-repeat center 2px;
+}
+
+.dd{
+    width: 302px;
+    padding: 12px 15px;
+    margin: 0 auto;
+    background: white;
+}
+.tel {
+    width: 302px;
+    padding: 12px 15px;
+    margin: 0 auto;
+    margin-top: 18px;
+    background: white;
+}
+.tips{
+    width: 1180px;
+    margin: 0 auto;
+    padding: 46px 0 82px 56px;
+    font-size: 12px;
+}
+.tips dt{
+    text-indent: 32px;
+    margin-bottom: 10px;
+    background: url("../img/icon_arrow.jpg") no-repeat 12px center;
+}
+.tips dd{
+    line-height: 32px;
+    padding-left: 10px;
+}
+.innerIndexRight a{
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    width: 204px;
+    line-height: 34px;
+    margin: 0 auto;
+    margin-top: 55px;
+    background: pink;
+}
+
+
+.bgGrayWrap{
+    background: #f5f5f5;
+}
+.bgGray{
+    width: 1040px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.bgGray a{
+    float: left;
+    width: 104px;
+    height: 77px;
+    text-align: center;
+    font: 12px Arial, "宋体";
+}
+.bgGray a i{
+    display: block;
+    width: 104px;
+    height: 49px;
+    margin-bottom: 10px;
+    background:url("../img/icon_shape.jpg") no-repeat 0px 0px;
+}
+.bgGray a:nth-child(2) i{
+    background-position: -104px 0px;
+}
+.bgGray a:nth-child(3) i{
+    background-position: -206px 0px;
+}
+.bgGray a:nth-child(4) i{
+    background-position: -300px 0px;
+}
+.bgGray a:nth-child(5) i{
+    background-position: -392px 0px;
+}
+.bgGray a:nth-child(6) i{
+    background-position: -491px 0px;
+}
+.bgGray a:nth-child(7) i{
+    background-position: -587px 0px;
+}
+.bgGray a:nth-child(8) i{
+    background-position: -674px 0px;
+}
+.bgGray a:nth-child(9) i{
+    background-position: -774px 0px;
+}
+.bgGray a:nth-child(10) i{
+    background-position: -884px 0px;
+}
+.bgGrayA:hover .bgGrayI{
+    background-position-y: -49px;
+}
+/*part*/
+.part{
+    width: 1180px;
+    margin: 55px auto 0;
+}
+.partBot{
+    margin-top: 15px;
+}
+.topLeft{
+    float: left;
+}
+.topRight{
+    float: right;
+}
+/*stores*/
+.stores{
+    width: 1180px;
+    margin: 36px auto 0;
+    border-top: 1px solid black;
+}
+.list1{
+    border-bottom: 1px solid #ececec;
+    padding: 17px 0;
+}
+.list1Head{
+    float: left;
+    width: 104px;
+    line-height: 49px;
+}
+.list1Section{
+    float: left;
+    width: 1023px;
+    text-align: center;
+    font-size: 12px;
+}
+.list1Section li:first-child{
+    color: #f6827a;
+}
+.list1Section li{
+     float: left;
+    width: 67px;
+    margin: 0 12px;
+    line-height: 24px;
+}
+.list2Section li{
+    padding: 0 20px;
+}
+.list2Section li:first-child a{
+    color: #f6827a;
+}
+.list1Section li:hover{
+    cursor: pointer;
+}
+.list2{
+    position: relative;
+    padding: 20px 0;
+}
+.cityStores{
+    display: none;
+    border-bottom: none;
+ }
+
+.list2Section{
+    position: absolute;
+    font-size: 12px;
+    left:100px;
+    top: 18px;
+    display: none;
+}
+.list2Section li{
+    float: left;
+    line-height: 25px;
+}
+.stores .active{
+    display: block;
+}
+.stores .list2 .firstUl{
+    top: 6px;
+}
+.stores .list2 .firthUl{
+    top: 6px;
+}
+.cityStores .list2Head{
+    line-height: 24px;
+}
+
+.cityShow{
+    float: left;
+}
+#cityBanner{
+    width: 700px;
+    height: 533px;
+    position: relative;
+}
+.cityImg{
+    position: absolute;
+    width: 700px;
+    height: 533px;
+    opacity: 0;
+}
+#cityBanner .aImg:first-child{
+    opacity: 1;
+}
+#citySelectBox{
+    position: absolute;
+    left: 320px;
+    bottom: 30px;
+}
+#citySelectBox li{
+    float: left;
+    margin-right: 9px;
+    width: 14px;
+    height: 14px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: gray;
+}
+#citySelectBox li:first-child{
+    background: #fff;
+}
+.cityInfomation{
+    width: 480px;
+    padding-top: 110px;
+    padding-bottom: 109px;
+    float: right;
+    text-align: center;
+    font-size: 12px;
+    background: #fdeaea;
+}
+.cityInfomation h2{
+    font-size: 32px;
+    font-weight: normal;
+}
+.cityInfomation i{
+    display: block;
+    width: 59px;
+    margin: 43px auto 16px;
+    border-top: 1px solid black;
+}
+.cityInfomation p{
+    line-height: 22px;
+}
+#inputTxt{
+    background: #fdeaea;
+}
+#sendInfo{
+    float: none;
+    margin: 50px auto 33px;
+    position: relative;border: 1px solid gray;
+    border-right: none;
+    background: #fdeaea;
+}
+#sendInfoBtn{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    left: 203px;
+    top: -1px;
+    width: 38px;
+    border: 1px solid gray;
+    border-left: none;
+}
+.onlineCheck{
+    display: block;
+    width: 142px;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 auto;
+    color: white;
+    background: #f6827a;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: .3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+/*news*/
+.newsWrap{
+    width: 1180px;
+    margin: 30px auto 0;
+}
+.news{
+    float: left;
+    font-size: 12px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+.newsUl{
+    float: left;
+    width: 310px;
+    height: 322px;
+    padding-left: 20px;
+}
+.newsUl li{
+    line-height: 28px;
+}
+.newsUl li:hover a{
+    color: #f6827a;
+}
+.newsUl li:first-child{
+    line-height: 60px;
+}
+.newsUl li:last-child{
+    margin-top: 20px;
+}
+.pic{
+    float: right;
+}

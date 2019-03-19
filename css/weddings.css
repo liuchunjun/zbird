@@ -1,0 +1,180 @@
+.wedJz {
+  position: relative; }
+  .wedJz .title {
+    width: 100%;
+    position: absolute;
+    border: none; }
+    .wedJz .title .title_dz {
+      width: 1180px;
+      margin: 0 auto; }
+  .wedJz .wedJzBg {
+    height: 356px;
+    margin: 0 auto;
+    background: url("../img/list_pic_wed.jpg") no-repeat center center; }
+
+.wedCnt {
+  width: 1180px;
+  margin: 35px auto 0px; }
+  .wedCnt .wedCntLeft {
+    width: 181px;
+    float: left; }
+    .wedCnt .wedCntLeft .cntDt {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 10px 0px 10px; }
+      .wedCnt .wedCntLeft .cntDt .dlist dt {
+        padding-left: 20px;
+        height: 30px;
+        line-height: 30px;
+        background: url("../img/arrow_right.jpg") no-repeat 0 center; }
+      .wedCnt .wedCntLeft .cntDt .dlist .atv {
+        background: url("../img/arrow_down.jpg") no-repeat 0 center; }
+      .wedCnt .wedCntLeft .cntDt .dlist dd {
+        display: none;
+        padding-left: 20px;
+        height: 30px;
+        line-height: 30px; }
+    .wedCnt .wedCntLeft .cntHot h4 {
+      line-height: 30px;
+      text-align: center; }
+    .wedCnt .wedCntLeft .cntHot li img {
+      width: 181px;
+      height: 221px; }
+    .wedCnt .wedCntLeft .cntHot li p, .wedCnt .wedCntLeft .cntHot li div {
+      text-align: center;
+      margin-bottom: 4px; }
+    .wedCnt .wedCntLeft .cntHot li .dj {
+      color: #f6827a;
+      padding-right: 10px; }
+    .wedCnt .wedCntLeft .cntHot li .hadSell {
+      color: gray; }
+  .wedCnt .wedCntRight {
+    float: right;
+    width: 945px;
+    height: 100px;
+    border-top: 1px solid black; }
+    .wedCnt .wedCntRight .styleList {
+      border-top: 1px solid black; }
+      .wedCnt .wedCntRight .styleList li {
+        height: 39px;
+        line-height: 39px;
+        border-top: 1px solid #f3f3f4;
+        position: relative; }
+        .wedCnt .wedCntRight .styleList li span {
+          padding-left: 39px;
+          cursor: pointer; }
+        .wedCnt .wedCntRight .styleList li .first {
+          display: inline-block;
+          width: 90px; }
+        .wedCnt .wedCntRight .styleList li .moreSearchBtn, .wedCnt .wedCntRight .styleList li .hiddenBtn {
+          display: block;
+          background: #ffffff;
+          position: absolute;
+          left: 421px;
+          top: -1px;
+          text-align: center;
+          width: 100px;
+          line-height: 25px;
+          padding: 0;
+          border: 1px solid #f3f3f4;
+          border-top-color: #ffffff; }
+      .wedCnt .wedCntRight .styleList .moreUl {
+        display: none; }
+      .wedCnt .wedCntRight .styleList div {
+        text-align: center; }
+        .wedCnt .wedCntRight .styleList div span {
+          display: inline-block;
+          padding: 0px 54px 12px;
+          box-sizing: border-box; }
+        .wedCnt .wedCntRight .styleList div i {
+          display: inline-block;
+          width: 1px;
+          height: 20px;
+          background: #f3f3f4;
+          vertical-align: middle; }
+        .wedCnt .wedCntRight .styleList div span:first-child {
+          border-bottom: 2px solid #f5827b; }
+  .wedCnt .pageNavList {
+    padding-top: 20px;
+    font-size: 13px;
+    color: #666; }
+    .wedCnt .pageNavList a {
+      display: block;
+      line-height: 30px;
+      padding: 0 14px; }
+    .wedCnt .pageNavList .navListLeft {
+      float: left;
+      border: 1px solid #e2e1e1; }
+      .wedCnt .pageNavList .navListLeft li {
+        background: url("../img/index_arrow_gray_up.png") no-repeat right center #e2e1e1;
+        border: 1px solid transparent;
+        float: left; }
+        .wedCnt .pageNavList .navListLeft li a {
+          color: #666; }
+      .wedCnt .pageNavList .navListLeft li:hover {
+        border-left: 1px solid #e2e1e1;
+        border-right: 1px solid #e2e1e1;
+        background: url("../img/index_arrow_gray_up.png") no-repeat right center #fff; }
+      .wedCnt .pageNavList .navListLeft li:first-child:hover {
+        border-left-color: transparent;
+        border-right: 1px solid #e2e1e1; }
+      .wedCnt .pageNavList .navListLeft li:last-child:hover {
+        border-right-color: transparent;
+        border-left: 1px solid #e2e1e1; }
+      .wedCnt .pageNavList .navListLeft .on {
+        background: url("../img/index_arrow_white_down2.png") no-repeat right center #ffffff; }
+    .wedCnt .pageNavList .navListRight {
+      width: 178px;
+      float: right; }
+      .wedCnt .pageNavList .navListRight li {
+        float: left;
+        line-height: 30px;
+        padding: 0 10px; }
+        .wedCnt .pageNavList .navListRight li .middleLine {
+          display: block;
+          width: 1px;
+          background: gray;
+          height: 18px;
+          margin-top: 6px; }
+      .wedCnt .pageNavList .navListRight .nextPageBtn:hover {
+        color: #f5827b;
+        cursor: pointer; }
+  .wedCnt .goodsCnt li {
+    box-sizing: border-box;
+    border-bottom: 1px solid #d6d6d6;
+    width: 300px;
+    height: 368px;
+    text-align: center;
+    float: left;
+    margin: 15px 15px 0 0; }
+    .wedCnt .goodsCnt li .imgBox a {
+      width: 240px;
+      height: 275px;
+      display: block;
+      position: relative; }
+      .wedCnt .goodsCnt li .imgBox a img {
+        width: 240px;
+        height: 238px;
+        position: absolute;
+        left: 38px;
+        top: 0;
+        transition: all .3s ease-in; }
+      .wedCnt .goodsCnt li .imgBox a img:nth-child(2) {
+        opacity: 0; }
+    .wedCnt .goodsCnt li .imgBox a:hover img:nth-child(1) {
+      opacity: 0; }
+    .wedCnt .goodsCnt li .imgBox a:hover img:nth-child(2) {
+      opacity: 1; }
+    .wedCnt .goodsCnt li .goodsCntP {
+      height: 22px;
+      line-height: 22px;
+      color: #666; }
+      .wedCnt .goodsCnt li .goodsCntP span {
+        padding: 0 10px; }
+      .wedCnt .goodsCnt li .goodsCntP .selled, .wedCnt .goodsCnt li .goodsCntP .comment {
+        color: #333;
+        font-weight: 600; }
+    .wedCnt .goodsCnt li .sellsPrice {
+      color: #f5827b; }
+  .wedCnt .goodsCnt li:hover {
+    border-bottom: 4px solid #f5827b; }

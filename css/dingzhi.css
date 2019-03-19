@@ -1,0 +1,41 @@
+
+.navLeft a:nth-child(6){
+    background: #fdb2a4;
+}
+.cntWrap{
+    width: 1180px;
+    margin: 0 auto;
+}
+.cnt0_1{
+    padding: 18px 0 100px 0;
+}
+.imgLeft{
+    float: left;
+}
+.imgRight{
+    float: right;
+}
+.cntWrap .commend>h2{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.cnt1{
+    height: 640px;
+    background: url("../img/bg_05.jpg") no-repeat;
+}
+.cnt1_1{
+    float: left;
+    width: 705px;
+    height: 442px;
+}
+.cnt1_2{
+    float: right;
+    width: 456px;
+    height: 640px;
+}
+.cnt1_3{
+    float: left;
+    width: 705px;
+    height: 180px;
+    margin-top: 18px;
+}

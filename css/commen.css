@@ -1,0 +1,581 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td,input,a{
+    margin:0;
+    padding:0;
+}
+body{
+    font: 12px "宋体",Arial;
+    width: 100%;
+    height: 100%;
+}
+ul,ol{
+    list-style:none;
+}
+img{
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+i{
+    font-style: normal;
+}
+.headerTopWrap{
+    width: 100%;
+    background: #f8e3df;
+}
+.headerTop{
+    width: 1180px;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.welcome{
+    float: left;
+}
+.welcome>li{
+    float: left;
+}
+.welcome li:first-child{
+    margin-right: 12px;
+}
+.welcome li:nth-child(2){
+    margin:0 10px;
+}
+.headerTopRight{
+    float: right;
+}
+.headerTopRight>li{
+    float: left;
+    width: 58px;
+    margin-left: 12px;
+    text-align: center;
+    position: relative;
+}
+#liShopCar{
+    width: 115px;
+}
+#liShopCar:hover{
+    background: white;
+}
+#shopCar{
+    display: block;
+    width: 114px;
+    height: 34px;
+    border: 1px solid #f8e3df;
+    border-bottom: none;
+    background: url("../img/icon_drop.png") no-repeat;
+    background-position: 96px center;
+}
+#liShopCar:hover #shopCar{
+    border: 1px solid #f8a89c;
+
+}
+#shopCar img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#shopCounts{
+    margin-left: 6px;
+}
+#hiddenShopCar{
+    width: 200px;
+    height: 51px;
+    border: 1px solid #f8a89c;
+    border-top: none;
+    padding-top: 10px;
+    position: absolute;
+    left: 0px;
+    top: 34px;
+    display: none;
+}
+#liShopCar:hover #hiddenShopCar{
+    display: block;
+    background: white;
+    z-index: 999;
+}
+#liShopCar:hover .line{
+    display: block;
+    z-index: 999;
+}
+#liShopCar .line{
+    width: 87px;
+    height: 1px;
+    position: absolute;
+    left: 115px;
+    top: 33px;
+    border-top: 1px solid #f8a89c;
+    display: none;
+}
+.headerTopRight>li:nth-child(3){
+    width: 63px;
+    height: 32px;
+    cursor: pointer;
+    padding-right: 16px;
+    border: 1px solid #f8e3df;
+    border-bottom: none;
+    background: url("../img/icon_drop.png") no-repeat 65px center;
+}
+.headerTopRight>li:nth-child(3):hover{
+    background: url("../img/icon_drop.png") no-repeat 65px center #fff;
+    border: 1px solid #f8a89c;
+    border-bottom: none;
+}
+.hiddenBox{
+    width: 100%;
+    height: 74px;
+    background: white;
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    border: 1px solid #f8a89c;
+    border-top: none;
+    z-index: 999;
+    display: none;
+    text-align: left;
+    text-indent: 10px;
+}
+.hiddenBox li{
+    height: 20px;
+}
+.hiddenBox li:hover a{
+    color: pink;
+}
+.headerTopRight>li:nth-child(3):hover .hiddenBox{
+    display: block;
+}
+.headerTopRight .topLastLi{
+    width: 56px;
+    height: 32px;
+    border: 1px solid #f8e3df;
+}
+.topLastLi:hover{
+    border: 1px solid #f8a89c;
+    border-bottom: none;
+}
+.topLastLi:hover .phoneWeb{
+    display: block;
+}
+.phoneWeb{
+    height: 156px;
+    position: absolute;
+    left: -177px;
+    top: 33px;
+    border: 1px solid #f8a89c;
+    border-top: none;
+    z-index: 999;
+    display: none;
+}
+.line2{
+    width: 176px;
+    height: 0px;
+    border-top: 1px solid #f8a89c;
+    position: absolute;
+    top: 0px;
+}
+.clearfix:after{
+    /*添加一个内容*/
+    content: "";
+    /*转换一个块元素*/
+    display: block;
+    /*清除两侧浮动*/
+    clear: both;
+}
+/*
+ * 在IE6中不支持after伪类，还需hasLayout解决问题
+ */
+.clearfix{
+    zoom : 1;
+}
+.headerMiddleWrap{
+    width: 100%;
+    background: #fdf2ec;
+}
+.headerMiddle{
+    width: 1180px;
+    height: 95px;
+    margin: 0 auto;
+    position: relative;
+}
+.headerMiddleLeft{
+    float: left;
+}
+.aLogo{
+    display: inline-block;
+    margin: 28px 0 0 35px;
+}
+.wordLg{
+    vertical-align: top;
+    margin: 41px 0 0 48px;
+}
+.headerMiddleRight{
+    position: absolute;
+    right: 0;
+    top: 31px;
+}
+.search{
+    float: left;
+    width: 204px;
+    height: 30px;
+    border: 1px solid gray;
+    position: relative;
+    background: #fff;
+}
+.search input{
+    width: 157px;
+    height: 16px;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+#serBtn{
+    width: 41px;
+    height: 29px;
+    background: url("../img/ser.png");
+    position: absolute;
+    left: 162px;
+    top: 1px;
+}
+.yy{;
+    width: 96px;
+    height: 32px;
+    float: right;
+    margin-left: 10px;
+    background: url("../img/header_btn.jpg");
+}
+/*nav*/
+.navWrap{
+    width: 100%;
+    background: #909090;
+}
+nav{
+    width: 1180px;
+    height: 33px;
+    margin: 0 auto;
+    background: #909090;
+}
+nav a{
+    color: white;
+    float: left;
+    width: 97px;
+    font-size: 13px;
+    line-height: 33px;
+    text-align: center;
+    font-family: Arail,"宋体";
+}
+nav a:hover{
+    background: #fdb2a4;
+}
+.navLeft{
+    float: left;
+}
+.navRight{
+    float: right;
+}
+.navShow{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+    display: none;
+}
+.navOuter{
+    width: 1180px;
+    height: 327px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+}
+.navInner{
+    height: 293px;
+    padding-top: 33px;
+    position: absolute;
+    z-index: 999;
+}
+.innerIndex{
+    width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 46px;
+    border-bottom: 1px solid black;
+}
+.innerIndex p{
+    line-height: 46px;
+}
+.innerIndexLeft{
+    float: left;
+}
+.innerIndexRight{
+    float: left;
+    width: 428px;
+    height: 508px;
+    background: gainsboro;
+    text-align: center;
+}
+.innerIndexRight input{
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.innerIndexRight h1{
+    padding-top: 96px;
+}
+.innerIndexRight span{
+    display: block;
+    margin: 14px 0 55px 0;
+}
+.navShowLeft{
+    float: left;
+    width: 318px;
+    border-right: 1px solid black;
+    margin-left: 30px;
+}
+.navShowLeft p{
+    line-height: 36px;
+    font-size: 12px;
+}
+.navShowLeft p:hover{
+    color:pink;
+}
+.navOuter li:hover a{
+    color:pink;
+}
+.diamondKind1{
+    float: left;
+    width: 134px;
+}
+.diamondKindLi{
+    line-height: 24px;
+    font-size: 12px;
+}
+.diamondKind2{
+    float: left;
+}
+.navShowCenter{
+    float: left;
+    width: 220px;
+    margin-top: 64px;
+}
+.CenterIntroduce{
+    margin-left: 46px;
+}
+.navShowRight{
+    float: left;
+}
+#slideContent{;
+    width: 1096px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 197px;
+}
+
+
+/*main*/
+.main{
+    width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 65px;
+}
+
+/*小banner*/
+.title{
+    line-height: 50px;
+    border-bottom: 1px solid black;
+}
+.commend{
+    position: relative;
+}
+.commend>h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 26px;
+    margin: 45px 0;
+    position:relative;
+}
+#slideUl{
+    width: 2200px;
+    position: absolute;
+}
+.slideLi{
+    float: left;
+    width: 240px;
+    padding: 0 17px;
+    transition: all 1s ease;
+}
+.slideLi:hover{
+    transform: translateY(-15px);
+}
+#preLi{
+    display: block;
+    width: 37px;
+    height: 51px;
+    background: url("../img/icon_prev.jpg") no-repeat -37px 0;
+    position: absolute;
+    left: -20px;
+    top: 80px;
+}
+#nextLi{
+    display: block;
+    width: 37px;
+    height: 51px;
+    background: url("../img/icon_prev.jpg") no-repeat 0 -51px;
+    position: absolute;
+    right: -20px;
+    top: 80px;
+}
+
+/*footer*/
+footer{
+    width: 1180px;
+    margin: 0 auto;
+}
+.footerWrap{
+    width: 100%;
+    background: #fdf2ec;
+    padding-bottom: 95px;
+}
+.ftBanner{
+    height: 66px;
+    background: url("../img/footer_lnks.jpg") no-repeat;
+    border-bottom: 1px solid white;
+}
+.ftBanner a{
+    float: left;
+    width: 196px;
+    height: 66px;
+}
+.ftService{
+    padding-top: 30px;
+}
+.LogoUl{
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.ftService .ftUls{
+    float: left;
+    width: 144px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.ftUls a{
+    color: #999999;
+}
+.ftUls li:hover a{
+    color: pink;
+}
+.ftUls li:first-child{
+    padding-bottom: 8px;
+}
+.code{
+    float: right;
+}
+.ftConsult{
+    padding:21px 0;
+}
+.ftConsult a{
+    display: block;
+    width: 488px;
+    height: 60px;
+    margin: 0 auto;
+    background: url("../img/fot_consult.jpg") no-repeat;
+}
+.ftAlink{
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+}
+.ftAlink a{
+    padding: 0 5px;
+    color: #999999;
+}
+.footerWrap .scrollBox{
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+}
+.scrollBox{
+    position: absolute;
+
+    margin-bottom: 20px;
+}
+.scrollAlink{
+    position: absolute;
+    left: 124px;
+    top: 0px;
+}
+.ftAlink p{
+    padding: 5px 0px;
+}
+
+.ftImg{
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 22px;
+    text-align: center;
+}
+.ftImg img{
+    width: 110px;
+    height: 35px;
+}
+
+
+/*固定区域*/
+.fixBox{
+    width: 67px;
+    height: 340px;
+    position: fixed;
+    right: 0;
+    bottom: 183px;
+    z-index: 1000;
+}
+.gz{
+    position: fixed;
+    right: 67px;
+    bottom: 75px;
+    display: none;
+}
+
+.newsCnt {
+    width: 1180px;
+    margin: 50px auto 100px;
+    padding: 50px 0;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;}
+.newsCnt a:hover {
+    color: #f5827b; }
+.newsCnt h4:hover {
+    cursor: pointer; }
+.newsCnt .newsHot {
+    width: 600px;
+    padding-left: 10px;
+    float: left; }
+.newsCnt .newsHot div {
+    padding-top: 17px; }
+.newsCnt .newsHot .newsHotLeft {
+    float: left; }
+.newsCnt .newsHot .newsHotLeft span {
+    display: inline-block;
+    width: 228px;
+    height: 25px;
+    line-height: 25px;
+    padding-right: 65px; }
+.newsCnt .newsHot .newsHotRight {
+    float: right; }
+.newsCnt .newsHotClassify {
+    float: right;
+    width: 569px; }
+.newsCnt .newsHotClassify .classifyBox {
+    padding-top: 17px; }
+.newsCnt .newsHotClassify .classifyBox a {
+    float: left;
+    padding: 0 10px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    margin: 0 5px 14px 0;
+    background: #f5f5f5; }
+/*公共部分结束*/

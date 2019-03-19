@@ -1,0 +1,37 @@
+
+.headerMiddleRight {
+	top: 18px;
+}
+.shopPartHidden{
+	width: 1180px;
+	height: 432px;
+	margin: 60px auto;
+	background: url("../img/shopcarbgpic.jpg");
+}
+.carContent{
+	width: 320px;
+	height: 200px;
+	text-align: center;
+	float: right;
+	margin: 135px 130px 0 0;
+}
+.carContent h2{
+	font-weight: normal;
+}
+.spanLine{
+	width: 40px;
+	height: 1px;
+	display: block;
+	background: #000000;
+	margin: 22px auto 0;
+}
+.carContent p{
+	margin: 14px 0 38px;
+}
+.carContent a{
+	width: 126px;
+	line-height: 34px;
+	margin-right: 8px;
+	display: inline-block;
+	background: #ff8a81;
+}

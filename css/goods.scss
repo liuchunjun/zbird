@@ -1,0 +1,261 @@
+@charset "utf-8";
+.title{
+    border: none;
+    .title_dz{
+    width: 1180px;
+    margin: 0 auto;
+  }
+}
+
+
+.bigShow{
+  width: 1180px;
+  height: 555px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  .pic{
+    float: left;
+    position: relative;
+    .picBox{
+      position: relative;
+      width: 400px;
+      margin-left: 104px;
+      height: 400px;
+      z-index: 6;
+      .on{
+        z-index: 2;
+        opacity: 1;
+      }
+      .mask{
+        position: absolute;
+        width: 210px;
+        height: 215px;
+        z-index: 3;
+        background: #fbc9ba;
+        opacity: .3;
+        display: none;
+      }
+    }
+    .picBox:hover{
+      .mask{
+        display: block;
+      }
+    }
+    .picBox img{
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      z-index: 1;
+      opacity: 0;
+      transition: all .8s ease;
+
+    }
+    
+    .morePicWrap{
+      width: 288px;
+      height: 63px;
+      margin-top: 4px;
+      margin-left: 136px;
+      overflow: hidden;
+      padding: 0 24px;
+      position: relative;
+      .morePic{
+        width: 602px;
+        position: absolute;
+        left: 20px;
+        img{
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          margin: 0 4px;
+          border: 1px solid #dfdede
+        }
+        .on{
+          border: 1px solid #f8a89d;
+        }
+      }
+      span{
+        width: 12px;
+        height: 62px;
+        display: block;
+        position: absolute;
+      }
+      .preBtn{
+        display: none;
+        left: 0px;
+        background: url("../img/btn_prev.jpg") no-repeat;
+      }
+      .nextBtn{
+        right: -1px;
+        background: url("../img/btn_next.jpg") no-repeat;
+      }
+    }
+
+    .bgBox{
+      display: none;
+      width: 420px;
+      height: 430px;
+      border: 1px solid gray;
+      position: absolute;
+      background: url("../img/goods01.jpg") no-repeat;
+      background-size: 800px 800px;
+      left: 530px;
+      top: 20px;
+    }
+
+  }
+  .goodsInfo{
+    width: 535px;
+    float: right;
+    color: #999;
+    h1{
+      line-height: 25px;
+      padding: 7px 0;
+      color:black;
+      font-weight: 200;
+    }
+    .p_s_p{
+      line-height: 23px;
+      padding: 15px 0 23px;
+      span{
+        padding-right: 48px;
+        i{
+          padding-left: 20px;
+          color: #f6827a;
+        }
+
+      }
+      span:first-child{
+        i{
+          padding-left: 62px;
+        }
+      }
+    }
+    .aboutGoods{
+      height: 144px;
+      padding: 20px 0;
+      border-top: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+      li{
+        line-height: 29px;
+        i{
+          padding: 0 28px 0px 62px;
+        }
+        &:hover a{
+          color: #f6827a;
+        }
+      }
+    }
+    .moreGoods{
+      padding-top: 30px;
+      margin-bottom: 60px;
+      a{
+        display: inline-block;
+        padding: 8px 20px;
+        border:1px solid #dedcdd;
+        margin-left: 62px;
+      }
+      a:hover{
+        border-color: #f6827a;
+        background: #fdf2ec;
+      }
+    }
+    .car{
+      a{
+        padding: 8px 39px;
+        background: #ff8a81;
+        color: #ffffff;
+      }
+      a:nth-child(2){
+        background: #b7ac7e;
+        margin-left: 5px;
+      }
+    }
+    .sharTo{
+      i{
+        float: left;
+        padding-top: 13px;
+      }
+      margin-top: 20px;
+      height: 25px;
+      background: url("../img/shar_icon.png") no-repeat 50px center;
+      a{
+        display: inline-block;
+        width: 23px;
+        height: 25px;
+        float: left;
+        margin-right: 5px;
+
+      }
+      a:hover{
+        opacity: .1;
+        background: gray;
+      }
+      a:nth-child(2){
+        margin-left:28px;
+      }
+    }
+  }
+}
+
+.det_tab{
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  a{
+    display: inline-block;
+    padding: 0 34px;
+  }
+  .on{
+    color:#ff8a81;
+  }
+}
+
+.detail{
+  width: 1180px;
+  margin: 0 auto;
+
+  .det_img{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    img{
+      flex-shrink: 0;
+      justify-content: center;
+    }
+  }
+  .det_tip{
+    padding-left: 33px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-bottom: 40px;
+    color: #666;
+    dt{
+      padding-left:20px;
+      margin: 40px 0 20px 0px;
+      background: url("../img/icon_arrow (1).jpg") no-repeat 2px center;
+    }
+      dd{
+        line-height: 30px;
+      }
+  }
+  .det_comm{
+    height: 1155px;
+    h4{
+      margin-top: 20px;
+      font-weight: 200;
+      text-align: center;
+    }
+  }
+  .product{
+    height: 583px;
+    .proShow{
+      position: absolute;
+      display: none;
+    }
+    .active{
+      display: block;
+    }
+  }
+}

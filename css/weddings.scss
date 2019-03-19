@@ -1,0 +1,257 @@
+@charset "utf-8";
+.wedJz{
+	position:relative;
+	.title{
+		width:100%;
+		position:absolute;
+		border:none;
+		.title_dz{
+			width:1180px;
+			margin:0 auto;
+		}
+	}
+	.wedJzBg{
+		height:356px;
+		margin:0 auto;
+		background:url("../img/list_pic_wed.jpg") no-repeat center center;
+	}
+}
+
+.wedCnt{
+	width: 1180px;
+	margin: 35px auto 0px;
+	.wedCntLeft{
+		width: 181px;
+		float: left;
+		.cntDt{
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			padding: 10px 0px 10px;
+			.dlist{
+				dt{
+					padding-left: 20px;
+					height: 30px;
+					line-height: 30px;
+					background: url("../img/arrow_right.jpg") no-repeat 0 center;
+				}
+				.atv{
+					background:url("../img/arrow_down.jpg") no-repeat 0 center;
+				}
+				dd{
+					display: none;
+					padding-left: 20px;
+					height: 30px;
+					line-height: 30px;
+				}
+
+			}
+		}
+		.cntHot{
+			h4{
+				line-height: 30px;
+				text-align: center;
+			}
+			li{
+				img{
+					width: 181px;
+					height: 221px;
+				}
+				p,div{
+					text-align: center;
+					margin-bottom: 4px;
+				}
+				.dj{
+					color: #f6827a;
+					padding-right: 10px;
+				}
+				.hadSell{
+					color: gray;
+				}
+			}
+		}
+
+
+	}
+	.wedCntRight{
+		float: right;
+		width: 945px;
+		height: 100px;
+		border-top: 1px solid black;
+		.styleList{
+			border-top: 1px solid black;
+			li{
+				height: 39px;
+				line-height: 39px;
+				border-top: 1px solid #f3f3f4;
+				position: relative;
+				span{
+					padding-left: 39px;
+					cursor: pointer;
+				}
+				.first{
+					display: inline-block;
+					width: 90px;
+				}
+
+				.moreSearchBtn,.hiddenBtn{
+					display: block;
+					background: #ffffff;
+					position: absolute;
+					left: 421px;
+					top: -1px;
+					text-align: center;
+					width: 100px;
+					line-height: 25px;
+					padding: 0;
+					border: 1px solid #f3f3f4;
+					border-top-color: #ffffff;
+				}
+			}
+			.moreUl{
+				display: none;
+			}
+			div{
+				text-align: center;
+				span{
+					display: inline-block;
+					padding: 0px 54px 12px;
+					box-sizing: border-box;
+				}
+				i{
+					display: inline-block;
+					width: 1px;
+					height: 20px;
+					background: #f3f3f4;
+					vertical-align: middle;
+				}
+				span:first-child{
+					border-bottom: 2px solid #f5827b;
+				}
+			}
+
+		}
+	}
+
+	.pageNavList{
+		padding-top: 20px;
+		font-size: 13px;
+		color: #666;
+		a{
+			display: block;
+			line-height: 30px;
+			padding: 0 14px;
+		}
+		.navListLeft{
+			float: left;
+			border: 1px solid #e2e1e1;
+			li{
+				background: url("../img/index_arrow_gray_up.png") no-repeat right center #e2e1e1;
+				border: 1px solid transparent;
+				float: left;
+				a{
+					color: #666;
+				}
+			}
+
+			li:hover{
+				border-left: 1px solid #e2e1e1;
+				border-right: 1px solid #e2e1e1;
+				background: url("../img/index_arrow_gray_up.png") no-repeat right center #fff;
+			}
+			li:first-child:hover{
+				border-left-color: transparent;
+				border-right: 1px solid #e2e1e1;
+			}
+			li:last-child:hover{
+				border-right-color: transparent;
+				border-left: 1px solid #e2e1e1;
+			}
+			.on{
+				background: url("../img/index_arrow_white_down2.png") no-repeat right center #ffffff;
+			}
+		}
+
+		.navListRight{
+			width: 178px;
+			float: right;
+			li{
+				float: left;
+				line-height: 30px;
+				padding: 0 10px;
+				.middleLine{
+					display: block;
+					width: 1px;
+					background: gray;
+					height: 18px;
+					margin-top: 6px;
+				}
+			}
+			.nextPageBtn:hover{
+				color: #f5827b;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.goodsCnt{
+		li{
+            box-sizing: border-box;
+            border-bottom: 1px solid #d6d6d6;
+			width: 300px;
+			height: 368px;
+			text-align: center;
+			float: left;
+			margin:15px 15px 0 0;
+			.imgBox{
+				a{
+					width: 240px;
+					height: 275px;
+					display: block;
+					position: relative;
+					img{
+						width: 240px;
+						height: 238px;
+						//padding: 22px 30px 0;
+						position: absolute;
+						left: 38px;
+						top: 0;
+						transition: all .3s ease-in;
+					}
+					img:nth-child(2){
+						opacity: 0;
+					}
+				}
+				a:hover{
+					img:nth-child(1){
+						opacity: 0;
+					}
+					img:nth-child(2){
+						opacity: 1;
+					}
+				}
+			}
+			.goodsCntP{
+				height: 22px;
+				line-height: 22px;
+				color: #666;
+				span{
+					padding: 0 10px;
+				}
+				.selled,.comment{
+					color: #333;
+					font-weight: 600;
+				}
+			}
+			.sellsPrice{
+				color: #f5827b;
+			}
+		}
+
+        li:hover{
+          border-bottom: 4px solid #f5827b;
+        }
+  	}
+
+}
+
+
