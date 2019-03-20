@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /*登录栏*/
 .regWrap {
-  background: url("../img/auth_bg_new.jpg") no-repeat -290px 0;
-  height: 550px; }
+  background: url("../img/auth_bg_new.jpg") no-repeat -290px 0; }
 
 .login {
   float: right;
-  height: 550px;
   margin-right: 100px;
-  font-size: 12px; }
+  font-size: 12px;
+  display: block;
+  margin-bottom: 100px; }
 
 .box {
   width: 366px;
@@ -163,13 +163,17 @@
   height: 100%; }
 
 .regHidden {
-  width: 1180px;
+  display: none;
+  padding-bottom: 98px;
+  background: #f7e4db;
   margin: 0 auto;
+  font-size: 18px;
   clear: both; }
   .regHidden .head h3 {
     font-size: 28px;
     font-weight: 100;
     float: left;
+    margin-left: 55px;
     vertical-align: bottom; }
   .regHidden .head div {
     float: right;
@@ -181,13 +185,14 @@
     width: 736px;
     height: 460px;
     text-align: center;
-    margin: 0 auto; }
-    .regHidden .show show_tips {
+    margin: 0 auto;
+    margin-top: 139px; }
+    .regHidden .show .show_tips {
       font-size: 30px;
       line-height: 46px; }
     .regHidden .show div:nth-child(2) {
       padding: 46px 0 46px; }
-    .regHidden .show a:nth-child(3) {
+    .regHidden .show .shopNow {
       display: block;
       margin: 0 auto;
       width: 427px;
@@ -195,3 +200,12 @@
       line-height: 53px;
       background: #ff8a81;
       color: #fff; }
+    .regHidden .show p {
+      margin: 134px 0 48px; }
+    .regHidden .show .completeInfo a {
+      display: inline-block;
+      width: 207px;
+      height: 53px;
+      color: #7e6694;
+      line-height: 53px;
+      background: #fdf7f4; }

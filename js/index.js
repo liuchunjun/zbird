@@ -134,21 +134,25 @@ $(function($) {
     changeImg();
 
 
+
+
     //图片滑过遮罩效果
 
-});
 
+
+
+});
 let goCurrentIndex=0;
 let goTimer=null;
 
 //页面失去焦点时停止播放
-document.body.onblur=function () {
+window.onblur=function () {
     stopPlay();
     stopPlay2();
     changStop()
 };
 //页面获得焦点时继续播放
-document.body.onfocus=function () {
+window.onfocus=function () {
     autoPlay();
     autoPlay1();
     changeImg()
@@ -234,3 +238,6 @@ function changeImg() {
 function  changStop() {
     window.clearInterval(changeTimer)
 }
+
+
+

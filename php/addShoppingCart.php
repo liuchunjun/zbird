@@ -2,7 +2,7 @@
 	//添加到购物车
 	header("Content-Type:text/html;charset=utf-8");
 	//1、接受客户端的数据（用户输入的数据）
-	$userName   = $_REQUEST['userName'];
+	$vipName   = $_REQUEST['vipName'];
 	$goodsId   = $_REQUEST['goodsId'];
 	$goodsCount = $_REQUEST['goodsCount'];
 	
@@ -16,14 +16,14 @@
 	};
 	
 	//3）、传输数据（过桥）
-	$result = mysql_query("select * from shoppingCart where userName='".$userName."' and goodsId='".$goodsId."'",$conn);
+	$result = mysql_query("select * from shoppingCart where vipName='".$vipName."' and goodsId='".$goodsId."'",$conn);
 	//3.1)先查找该商品是否在购物车中存在
 	if(mysql_num_rows($result)>0){
 		//如果存在，则使用update语句
-		$sqlstr = "update shoppingCart set goodsCount=goodsCount+".$goodsCount." where userName='".$userName."' and goodsId='".$goodsId."'";
+		$sqlstr = "update shoppingCart set goodsCount=goodsCount+".$goodsCount." where vipName='".$vipName."' and goodsId='".$goodsId."'";
 	}else{
 		//如果不存在，则使用insert语句	
-		$sqlstr = "insert into shoppingCart values('".$userName."','".$goodsId."','".$goodsCount."')";
+		$sqlstr = "insert into shoppingCart values('".$vipName."','".$goodsId."','".$goodsCount."')";
 	}
 	
 	$result=mysql_query($sqlstr,$conn);	

@@ -1,37 +1,102 @@
-
 .headerMiddleRight {
-	top: 18px;
-}
-.shopPartHidden{
-	width: 1180px;
-	height: 432px;
-	margin: 60px auto;
-	background: url("../img/shopcarbgpic.jpg");
-}
-.carContent{
-	width: 320px;
-	height: 200px;
-	text-align: center;
-	float: right;
-	margin: 135px 130px 0 0;
-}
-.carContent h2{
-	font-weight: normal;
-}
-.spanLine{
-	width: 40px;
-	height: 1px;
-	display: block;
-	background: #000000;
-	margin: 22px auto 0;
-}
-.carContent p{
-	margin: 14px 0 38px;
-}
-.carContent a{
-	width: 126px;
-	line-height: 34px;
-	margin-right: 8px;
-	display: inline-block;
-	background: #ff8a81;
-}
+  top: 18px; }
+
+.shopPartHidden {
+  width: 1180px;
+  height: 432px;
+  margin: 60px auto;
+  background: url("../img/shopcarbgpic.jpg"); }
+  .shopPartHidden .carContentUser p {
+    margin-top: 60px; }
+  .shopPartHidden .carLst {
+    width: 1180px;
+    height: 432px;
+    margin: 0 auto;
+    background: #ffffff;
+    display: none; }
+    .shopPartHidden .carLst .carLstTit {
+      height: 32px;
+      line-height: 32px;
+      margin-bottom: 2px;
+      border-bottom: 1px solid black; }
+      .shopPartHidden .carLst .carLstTit span {
+        float: left; }
+      .shopPartHidden .carLst .carLstTit span:first-child {
+        width: 335px; }
+      .shopPartHidden .carLst .carLstTit span:nth-child(2) {
+        width: 184px; }
+      .shopPartHidden .carLst .carLstTit span:nth-child(3) {
+        width: 184px; }
+      .shopPartHidden .carLst .carLstTit span:nth-child(4) {
+        width: 80px; }
+      .shopPartHidden .carLst .carLstTit span:nth-child(5) {
+        width: 160px; }
+      .shopPartHidden .carLst .carLstTit span:nth-child(6) {
+        width: 160px; }
+      .shopPartHidden .carLst .carLstTit span:nth-child(7) {
+        width: 77px; }
+    .shopPartHidden .carLst .carLstInfo div {
+      overflow: hidden; }
+      .shopPartHidden .carLst .carLstInfo div div {
+        float: left;
+        line-height: 97px; }
+        .shopPartHidden .carLst .carLstInfo div div img {
+          vertical-align: middle; }
+    .shopPartHidden .carLst .clearCar_op {
+      float: left; }
+      .shopPartHidden .carLst .clearCar_op a {
+        display: inline-block;
+        height: 80px;
+        line-height: 80px;
+        margin-right: 30px; }
+    .shopPartHidden .carLst .clearCar_pay {
+      float: right; }
+      .shopPartHidden .carLst .clearCar_pay span {
+        display: inline-block;
+        width: 115px;
+        height: 80px;
+        line-height: 80px;
+        color: #666666; }
+        .shopPartHidden .carLst .clearCar_pay span i {
+          display: inline-block;
+          color: #000;
+          padding-left: 10px; }
+        .shopPartHidden .carLst .clearCar_pay span i:nth-child(2) {
+          color: #ff8a81; }
+      .shopPartHidden .carLst .clearCar_pay .pay {
+        width: 130px;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 106px;
+        cursor: pointer;
+        color: #fff;
+        background: #ff8a81;
+        text-align: center; }
+
+.carContent {
+  width: 320px;
+  height: 200px;
+  text-align: center;
+  float: right;
+  margin: 135px 130px 0 0;
+  display: none; }
+
+.carContent h2 {
+  font-weight: normal; }
+
+.spanLine {
+  width: 40px;
+  height: 1px;
+  display: block;
+  background: #000000;
+  margin: 22px auto 0; }
+
+.carContent p {
+  margin: 14px 0 38px; }
+
+.carContent a {
+  width: 126px;
+  line-height: 34px;
+  margin-right: 8px;
+  display: inline-block;
+  background: #ff8a81; }

@@ -2,15 +2,15 @@
 
 /*登录栏*/
 .regWrap{
-  width: 100%;
   background: url("../img/auth_bg_new.jpg") no-repeat -290px 0;
   //height: 550px;
 }
 .login{
   float: right;
-  height: 550px;
   margin-right: 100px;
   font-size: 12px;
+  display: block;
+  margin-bottom: 100px;
 }
 .box{
   width: 366px;
@@ -167,14 +167,18 @@
 }
 
 .regHidden{
-  width: 1180px;
+  display: none;
+  padding-bottom:98px;
+  background: #f7e4db;
   margin: 0 auto;
+  font-size: 18px;
   clear: both;
   .head{
     h3{
       font-size: 28px;
       font-weight: 100;
       float: left;
+      margin-left: 55px;
       vertical-align: bottom;
     }
     div{
@@ -191,14 +195,15 @@
     height: 460px;
     text-align: center;
     margin: 0 auto;
-    show_tips{
+    margin-top:139px;
+    .show_tips{
       font-size: 30px;
       line-height: 46px;
     }
     div:nth-child(2){
       padding: 46px 0 46px;
     }
-    a:nth-child(3){
+    .shopNow{
       display: block;
       margin: 0 auto;
       width: 427px;
@@ -206,6 +211,19 @@
       line-height: 53px;
       background: #ff8a81;
       color: #fff;
+    }
+    p{
+      margin: 134px 0 48px;
+    }
+    .completeInfo{
+      a{
+        display: inline-block;
+        width: 207px;
+        height: 53px;
+        color:#7e6694;
+        line-height: 53px;
+        background: #fdf7f4;
+      }
     }
   }
 }

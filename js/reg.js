@@ -131,9 +131,10 @@ $(function () {
         },function(data){
             if(data==1){
                 confirm("注册成功")
-                $(".regWrap").html("")
+                $(".login").css("display","none");
+                $(".regHidden").css("display","block")
             }else{
-                alert("注册失败")
+                $(".regTip").html("注册失败")
             }
         })
         }

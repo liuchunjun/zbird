@@ -2,9 +2,10 @@ body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td,input,a{
     margin:0;
     padding:0;
 }
-body{
+html,body{
     font: 12px "宋体",Arial;
     width: 100%;
+    min-width: 1180px;
     height: 100%;
 }
 ul,ol{
@@ -81,7 +82,7 @@ i{
 }
 #hiddenShopCar{
     width: 200px;
-    height: 51px;
+    min-height: 61px;
     border: 1px solid #f8a89c;
     border-top: none;
     padding-top: 10px;

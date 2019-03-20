@@ -1,4 +1,41 @@
 $(function () {
+    // 获取会员信息
+    let userStr=getCookie("userId");
+
+
+    function show(data){
+
+         if(data.length>0){
+             $("#shopCounts").html(data.length);
+             let sum=0;
+             let htmlStr="<div>";
+             for(let i=0;i<data.length;i++){
+                 sum+=parseFloat(data[i].goodsPrice);
+                 htmlStr+=`
+                    <div style="clear: both;">
+                      <img src="${data[i].goodsImg}" width="50" height="50" alt="" style="float: left;">
+                      <div style="float: left;">
+                        <div style="height: 30px;text-indent: 14px;">${data[i].goodsName}</div>
+                        <div style="height: 30px;">￥ ${data[i].goodsPrice}</div>        
+                      </div>
+                    </div> `
+             }
+             htmlStr+=`<div style="clear: both;"><span style="float: left;margin-left: 10px;">合计<i>￥${sum}</i></span><span style="float: right;cursor:pointer;margin-right: 10px;">结算</span></div></div>`;
+             $("#hiddenShopCar").html(htmlStr)
+         }
+    }
+    //获取购物车信息
+    $.get("php/getShoppingCart.php",{vipName:userStr},show,"json")
+
+    if(userStr!=null && userStr!=""){
+        $(".welcome li").eq(0).html("MemberOfZbird，您好！");
+        $(".welcome li").eq(1).html("您是<span style='color:#ff8a81;'>普通</span>会员");
+        $(".welcome li").eq(2).html("<a href='javascript:;' class='backBtn'>退出登录</a>");
+        $(".backBtn").click(function(){
+            addCookie("userId","",-1);
+            location.href="index.html"
+        })
+    }
     // 固定区域二维码显示、消失
     $("#share").mouseover(function(){
         console.log("111")
@@ -62,9 +99,15 @@ $(function () {
     //页面底部滚动链接
     scrollLinkGo();
 
-
-
 })
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg); //匹配目标参数
+    if (r != null) return unescape(r[2]);
+    return null; //返回参数值
+    console.log(r)
+}
+
 let upp=0;
 function scrollLinkGo(){
     setInterval(()=>{
@@ -76,3 +119,4 @@ function scrollLinkGo(){
         $(".scrollAlink").animate({"top":upp},"slow")
     },2000)
 }
+

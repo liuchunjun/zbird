@@ -34,7 +34,8 @@ $(function () {
             {"userId":$("#userName").val(),
             "userPass":$("#userPass").val()},function(data){
             if(data==1){
-                location.href="index.html"
+                addCookie("userId",$("#userName").val(),1);
+                location.href="index.html";
             }else{
                 alert("登陆失败")
             }
@@ -43,3 +44,5 @@ $(function () {
 
 
 })
+
+

@@ -110,17 +110,11 @@ $(function(){
 })
 
 $(function () {
-    function getUrlParam(name) {
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
-        var r = window.location.search.substr(1).match(reg); //匹配目标参数
-        if (r != null) return unescape(r[2]);
-        return null; //返回参数值
-        console.log(r)
-    }
-
-    let id = getUrlParam("goodsId")
-
+    let user=getCookie("userId");
+    let datas=null;
+    let id = getUrlParam("goodsId");
     function showlist(objs){
+        datas=objs;
         $(".goodsName").html(objs.goodsName);
         $(".mImgs").eq(0).attr("src",objs.goodsImg);
         $(".mImgs").eq(1).attr("src",objs.beiyong4);
@@ -136,9 +130,19 @@ $(function () {
         $(".pj").html(objs.beiyong3);
 
     }
-
     $.get("php/getGoodsInfo.php",{goodsId:id},showlist,"json");
+    
+    //添加商品至购物车
+    $(".addGoods").click(function () {
+        $.get("php/addShoppingCart.php",{vipName:user,
+                                            goodsId:datas.goodsId
+                                            },function () {
+                                                alert("ok");
+                                                location.href="cart.html"
+                                            });
 
+
+    })
 })
 
 window.onscroll=function () {
