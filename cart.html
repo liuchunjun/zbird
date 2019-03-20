@@ -18,7 +18,7 @@
 				</ul>
 				<ul class="headerTopRight clearfix">
 					<li id="liShopCar">
-						<a href="" id="shopCar"><img src="img/header_box.png" alt="">购物车<span id="shopCounts" style="color: red;">0</span></a>
+						<a class="toShopCar" href="cart.html" id="shopCar"><img src="img/header_box.png" alt="">购物车<span id="shopCounts" style="color: red;">0</span></a>
 						<div id="hiddenShopCar">购物车中无商品 </div>
 						<div class="line"></div>
 					</li>
@@ -56,15 +56,48 @@
 	</header>
 
 		<!--shopPart-->
-		<div class="shopPartHidden">
-			<div class="carContent">
-				<h2>我的购物车</h2>
-				<span class="spanLine"></span>
-				<p>登录账号，将喜爱的宝贝收入囊中吧！</p>
-				<a href="login.html">登录</a>
-				<a href="index.html">去首页</a>
+			<div class="shopPartHidden">
+				<div class="carContent carContentUnCheck">
+					<h2>我的购物车</h2>
+					<span class="spanLine"></span>
+					<p>登录账号，将喜爱的宝贝收入囊中吧！</p>
+					<a href="login.html">登录</a>
+					<a href="index.html">去首页</a>
+				</div>
+
+				<div class="carContent carContentUser">
+					<p>你的购物车内暂时没有商品，去首页挑选喜欢的商品</p>
+					<a href="index.html">去首页</a>
+				</div>
+
+				<div class="carLst">
+					<div class="carLstTit">
+						<span>商品</span>
+						<span>戒臂内圈刻字</span>
+						<span>时光环刻字</span>
+						<span>手寸</span>
+						<span>原价</span>
+						<span>小计</span>
+						<span>操作</span>
+					</div>
+					<div class="carLstInfo">
+
+					</div>
+					<div class="clearCar clearfix">
+						<div class="clearCar_op">
+							<a href="javascript:;">清空购物车</a>
+							<a href="index.html">继续购物</a>
+						</div>
+						<div class="clearCar_pay">
+							<div class="bill">
+								<span>订单总额<i class="sellsMoney"></i></span>
+								<span>本次应付<i class="billsMoney"></i></span>
+							</div>
+							<span class="pay">去结算</span>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
 
 		<!--footerWrap-->
 		<div class="footerWrap">
@@ -208,6 +241,6 @@
 	</body>
 </html>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/mover1810.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript" src="js/commen.js"></script>
-<script type="text/javascript" src="js/goods.js"></script>
+<script type="text/javascript" src="js/cart.js?p=1"></script>
