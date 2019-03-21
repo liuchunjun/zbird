@@ -3,14 +3,12 @@
 
 .shopPartHidden {
   width: 1180px;
-  height: 432px;
   margin: 60px auto;
   background: url("../img/shopcarbgpic.jpg"); }
   .shopPartHidden .carContentUser p {
     margin-top: 60px; }
   .shopPartHidden .carLst {
     width: 1180px;
-    height: 432px;
     margin: 0 auto;
     background: #ffffff;
     display: none; }
