@@ -1,67 +1,60 @@
-let timer1=null;
+
+//大轮播图
+$(function(){
+    var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal', // 水平切换选项
+
+            loop: true, // 循环模式选项
+
+            autoplay:true,//自动播放
+
+            effect : 'fade',//淡入
+
+            // 如果需要分页器
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+        },
+        })
+        //鼠标滑过停止播放
+        mySwiper.el.onmouseover = function(){
+          mySwiper.autoplay.stop();
+        }
+        mySwiper.el.onmouseout = function(){
+          mySwiper.autoplay.start();
+        }
+        //鼠标滑过pagination控制swiper切换
+        for(i=0;i<mySwiper.pagination.bullets.length;i++){
+          mySwiper.pagination.bullets[i].index=i
+          mySwiper.pagination.bullets[i].onmouseover=function(){
+            mySwiper.slideTo(this.index);
+          };
+        }
+        //如果你开启了clickable，还可以这样  
+        for(i=0;i<mySwiper.pagination.bullets.length;i++){
+          mySwiper.pagination.bullets[i].onmouseover=function(){
+            this.click();
+          };
+        } 
+})
+
+
+
+
+
 let timer2=null;
-let currentIndex=0;
 let currentIndex2=0;
-let aImgs=document.getElementsByClassName("aImg");
-let imgBtns=document.getElementById("selectBox").children;
 let cityImgs=document.getElementsByClassName("cityImg");
 let cityBtns=document.getElementById("citySelectBox").children;
 
 $(function($) {
-
-    //自动播放
-    autoPlay();
-    autoPlay1();
-    //鼠标滑入停止播放
-    $("#banner").mouseenter(function () {
-        stopPlay();
-    });
-
-    //鼠标离开继续播放
-    $("#banner").mouseleave(function () {
-        autoPlay();
-    });
-    //点击按钮向前或向后
-    $("#preBtn").click(function () {
-        currentIndex-=1;
-        if(currentIndex<0){
-            currentIndex=4
-        }
-        for(let i=0;i<aImgs.length;i++){
-            aImgs[i].style.opacity="0";
-            imgBtns[i].style.background="gray";
-        }
-        aImgs[currentIndex].style.opacity="1";
-        imgBtns[currentIndex].style.background="pink";
-    });
-    $("#nextBtn").click(function () {
-        currentIndex+=1;
-        if(currentIndex>4){
-            currentIndex=0
-        }
-        for(let i=0;i<aImgs.length;i++){
-            aImgs[i].style.opacity="0";
-            imgBtns[i].style.background="gray";
-        }
-        aImgs[currentIndex].style.opacity="1";
-        imgBtns[currentIndex].style.background="pink";
-    });
-    //给下面的Li添加颜色及事件
-    $("#selectBox>li").css("background","gray");
-    $("#selectBox>li:eq(currentIndex)").css("background","");
-    for(let i=0;i<imgBtns.length;i++){
-        imgBtns[i].style.background="gray";
-        imgBtns[i].onmouseover=function(){
-            currentIndex=i;
-            for(let i=0;i<aImgs.length;i++){
-                aImgs[i].style.opacity="0";
-                imgBtns[i].style.background="gray";
-            }
-            aImgs[i].style.opacity="1";
-            imgBtns[i].style.background="pink";
-        }
-    }
-    imgBtns[currentIndex].style.background="pink";
+   
     //图2轮播按钮
     for(let i=0;i<cityBtns.length;i++){
         cityBtns[i].style.background="gray";
@@ -145,18 +138,6 @@ $(function($) {
 let goCurrentIndex=0;
 let goTimer=null;
 
-//页面失去焦点时停止播放
-window.onblur=function () {
-    stopPlay();
-    stopPlay2();
-    changStop()
-};
-//页面获得焦点时继续播放
-window.onfocus=function () {
-    autoPlay();
-    autoPlay1();
-    changeImg()
-};
 
 function go(){
     goTimer=setInterval(()=>{
@@ -173,31 +154,8 @@ function go(){
 function stop(){
     window.clearInterval(goTimer);
 }
-function autoPlay(){
-    timer1=setInterval(()=>{
-        let outIndex=currentIndex;
-        currentIndex++;
-        if(currentIndex>4){
-            currentIndex=0
-        }
-        showImg(outIndex,currentIndex)
-    },4000)
-}
-function showImg(outIndex,inIndex){
-    //1、改图片
-    if(outIndex==inIndex){
-        return
-    }
-    fadeInOut(aImgs[outIndex],1000,aImgs[inIndex]);
-    // 2、改Li
-    for(let i=0;i<imgBtns.length;i++){
-        imgBtns[i].style.background="gray";
-    }
-    imgBtns[currentIndex].style.background="pink";
-}
-function stopPlay(){
-    window.clearInterval(timer1)
-}
+
+
 function stopPlay2(){
     window.clearInterval(timer2);
 }
@@ -238,6 +196,5 @@ function changeImg() {
 function  changStop() {
     window.clearInterval(changeTimer)
 }
-
 
 

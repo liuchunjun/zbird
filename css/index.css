@@ -10,74 +10,49 @@
     top: 112px;
 }
 /*banner*/
-#banner{
+.banner{
     width: 100%;
     height: 603px;
-    position: relative;
-    margin-bottom: 55px;
 }
-#banner a{
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    position: absolute;
- }
-#banner img{
-    width: 100%;
-    height: 100%;
+#pagination{
+    bottom:45px;
 }
-#banner>a:first-child{
-    opacity: 1;
+#pagination span{
+    width: 15px;
+    height: 15px;
+    background: pink;
 }
-#selectBox{
-    position: absolute;
-    left: 640px;
-    bottom: 40px;
-}
-#selectBox li{
-    float: left;
-    margin-right: 9px;
-    width: 14px;
-    height: 14px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    background: gray;
-}
-#preBtn{
+.banner:hover #pre{
     display: block;
+}
+.banner:hover #next{
+    display: block;
+}
+
+#pre{
     width: 45px;
     height: 70px;
-    position: absolute;
     left: 200px;
-    top: 255px;
-    background:url("../img/prev_54.png");
-    opacity: 0;
+    top:283px;
+    display: none;
+    background:url("../img/prev_54.png") no-repeat;
+    background-position: 0px 0px 
 }
-#preBtn:hover{
-    background-position: -45px;
+#pre:hover{
+    background-position: -45px 0px
 }
-#banner:hover #preBtn{
-    opacity: 1;
-}
-#banner:hover #nextBtn{
-    opacity: 1;
-}
-#nextBtn{
-    display: block;
+#next{
     width: 45px;
     height: 70px;
-    position: absolute;
     right: 200px;
-    top: 255px;
-    background:url("../img/next_54.png");
-    opacity: 0;
+    top:283px;
+    display: none;
+    background:url("../img/next_54.png") no-repeat;
+    background-position: 0px 0px 
 }
-#nextBtn:hover{
-    background-position: -45px;
+#next:hover{
+    background-position: -45px 0px
 }
-
-
 .mainLeft{
     float: left;
     width: 580px;

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>钻石小鸟</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/commen.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -353,22 +354,25 @@
 
 
 <!--banner-->
-    <div id="banner">
-        <a class="aImg" index="0" href="javascript:;"><img  src="img/b1.jpg"  /></a>
-        <a class="aImg" index="1" href="javascript:;"><img  src="img/b2.jpg"  /></a>
-        <a class="aImg" index="2" href="javascript:;"><img  src="img/b3.jpg"  /></a>
-        <a class="aImg" index="3" href="javascript:;"><img  src="img/b4.jpg"  /></a>
-        <a class="aImg" index="4" href="javascript:;"><img  src="img/b5.jpg"  /></a>
-        <ul id="selectBox">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <span id="preBtn"></span>
-        <span id="nextBtn"></span>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="javascript:;"><img  src="img/b1.jpg"  /></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img  src="img/b2.jpg"  /></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img  src="img/b3.jpg"  /></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img  src="img/b4.jpg"  /></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img  src="img/b5.jpg"  /></a></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination" id="pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev" id="pre"></div>
+            <div class="swiper-button-next" id="next"></div>
+
+        </div>
     </div>
+    
 <!--mainWrap-->
     <div class="mainWrap">
         <div class="main clearfix">
@@ -825,6 +829,7 @@
     </div>
 </body>
 </html>
+<script src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript" src="js/mover1810.js"></script>
